@@ -34,16 +34,16 @@ This is front end side of a quick app to management tasks.
 git clone git@github.com:upALX/registraai.git
 ```
 
-**2 - install all dependencies**
+**2 - build and run the docker instance**
 
 ```
-
+docker-compose up --build
 ```
 
-**3 - Run the app:**
+**Disclaimer - After build, only run the instance when necessary using:**
 
 ```
-
+docker-compose up
 ```
 
 ## Make your mark :triangular_flag_on_post:
