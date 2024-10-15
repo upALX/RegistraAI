@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import SubscribePage from "./pages/login/SubscribePage";
 import LoginPage from "./pages/login/LoginPage";
-import TasksPage from "./pages/tasks/tasks";
+import BoardPage from "./pages/board/board";
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
         <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/cadastro" element={<SubscribePage />} />
-        <Route path="/cadastro" element={<TasksPage />} />
+        <Route path="/tarefas" element={<BoardPage />} />
       </Routes>
     </Router>
   );
