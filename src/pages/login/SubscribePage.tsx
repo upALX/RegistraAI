@@ -5,7 +5,7 @@ import { graphqlRequest } from "../../connectors/graphql-connector";
 import { gql } from "@apollo/client";
 import { useNavigate } from "react-router-dom";
 
-const Subscribe = () => {
+const SubscribePage = () => {
   const navigate = useNavigate();
 
   const onSubmit: SubmitHandler<AuthTypes> = async (data) => {
@@ -48,4 +48,4 @@ const Subscribe = () => {
   );
 };
 
-export default Subscribe;
+export default SubscribePage;

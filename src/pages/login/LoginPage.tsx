@@ -5,7 +5,7 @@ import { graphqlRequest } from "../../connectors/graphql-connector";
 import { gql } from "@apollo/client";
 import { useNavigate } from "react-router-dom";
 
-const Login = () => {
+const LoginPage = () => {
   const router = useNavigate();
   const onSubmit: SubmitHandler<AuthTypes> = async (data) => {
     const LOGIN_MUTATION = gql`
@@ -46,4 +46,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginPage;
