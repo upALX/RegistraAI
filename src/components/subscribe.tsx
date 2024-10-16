@@ -39,7 +39,6 @@ const AuthForm: React.FC<AuthFormProps> = ({ onSubmit, isLoginForm }) => {
       </Heading>
 
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
-        {/* Campo de Nome */}
         {!isLoginForm && (
           <FormControl isInvalid={!!errors.name}>
             <Input
@@ -56,7 +55,6 @@ const AuthForm: React.FC<AuthFormProps> = ({ onSubmit, isLoginForm }) => {
           </FormControl>
         )}
 
-        {/* Campo de Email */}
         <FormControl isInvalid={!!errors.email}>
           <Input
             type="email"
@@ -75,7 +73,6 @@ const AuthForm: React.FC<AuthFormProps> = ({ onSubmit, isLoginForm }) => {
           </FormErrorMessage>
         </FormControl>
 
-        {/* Campo de Senha */}
         <FormControl isInvalid={!!errors.password}>
           <Input
             type="password"
@@ -94,7 +91,6 @@ const AuthForm: React.FC<AuthFormProps> = ({ onSubmit, isLoginForm }) => {
           </FormErrorMessage>
         </FormControl>
 
-        {/* Link para Cadastro */}
         {isLoginForm && (
           <span
             onClick={handleNavigateToRegister}
@@ -104,7 +100,6 @@ const AuthForm: React.FC<AuthFormProps> = ({ onSubmit, isLoginForm }) => {
           </span>
         )}
 
-        {/* Botão de Envio */}
         <Button
           type="submit"
           className="bg-zinc-500 hover:bg-zinc-800"
