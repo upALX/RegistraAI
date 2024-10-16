@@ -51,10 +51,10 @@ const BoardPage = () => {
   };
 
   return (
-    <VStack p={10}>
+    <VStack p={10} height="100vh">
       <Heading className="text-lg font-semibold">Suas tarefas</Heading>
       <SimpleGrid columns={2} spacing={10} width="100%">
-        <Box className="rounded-lg  p-5 bg-slate-900 shadow-md">
+        <Box className="rounded-lg p-5 bg-slate-900 shadow-md">
           <Heading
             size="lg"
             mb={2}
@@ -63,7 +63,7 @@ const BoardPage = () => {
             Pendente
           </Heading>
           <Box
-            className=" p-4 text-center cursor-pointer hover:bg-slate-800 transition-all"
+            className="p-4 text-center cursor-pointer hover:bg-slate-800 transition-all"
             onClick={handleOpenModal}
           >
             <Text className="text-slate-500 font-semibold hover:underline">
