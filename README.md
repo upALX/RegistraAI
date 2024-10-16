@@ -19,9 +19,11 @@ This is front end side of a quick app to management tasks.
 
 ## How to use 🫁
 
-**requirements:**
+**All of you need:**
   - docker >= 27.3.1
   - docker compose >= 1.29.2
+
+**This app will be expose on localhost:3000**
 
 **1 - Clone this repo:**
 
