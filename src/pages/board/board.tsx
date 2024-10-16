@@ -1,12 +1,5 @@
 import { useState } from "react";
-import {
-  Box,
-  Heading,
-  VStack,
-  Button,
-  SimpleGrid,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Heading, VStack, SimpleGrid, Text } from "@chakra-ui/react";
 import TaskModal from "../../components/modal";
 import { Task } from "../../types/task-types";
 import { gql } from "@apollo/client";
@@ -59,15 +52,24 @@ const BoardPage = () => {
 
   return (
     <VStack p={10}>
-      <Heading>Suas tarefas</Heading>
-      <SimpleGrid columns={2} spacing={20} width="100%" height="100%">
-        <Box className="rounded-lg border p-8" width="100%" height="100%">
-          <Heading size="md" mb={4}>
+      <Heading className="text-lg font-semibold">Suas tarefas</Heading>
+      <SimpleGrid columns={2} spacing={10} width="100%">
+        <Box className="rounded-lg  p-5 bg-slate-900 shadow-md">
+          <Heading
+            size="lg"
+            mb={2}
+            className="border-b pb-2 text-slate-400 font-semibold"
+          >
             Pendente
           </Heading>
-          <Button colorScheme="teal" onClick={handleOpenModal}>
-            Criar Nova Tarefa
-          </Button>
+          <Box
+            className=" p-4 text-center cursor-pointer hover:bg-slate-800 transition-all"
+            onClick={handleOpenModal}
+          >
+            <Text className="text-slate-500 font-semibold hover:underline">
+              + Criar Nova Tarefa
+            </Text>
+          </Box>
           {tasks.filter((task) => task.status === "pending").length === 0 ? (
             <Text mt={4}>Nenhuma tarefa pendente.</Text>
           ) : (
@@ -80,6 +82,7 @@ const BoardPage = () => {
                   borderRadius="lg"
                   p={3}
                   mt={3}
+                  className="bg-gray-100 hover:bg-gray-200 transition-all"
                 >
                   <Text fontWeight="bold">{task.title}</Text>
                   <Text>{task.description}</Text>
@@ -88,9 +91,13 @@ const BoardPage = () => {
           )}
         </Box>
 
-        <Box borderWidth={1} borderRadius="lg" p={5}>
-          <Heading size="md" mb={4}>
-            Concluído
+        <Box className="rounded-lg border p-5 bg-slate-800 shadow-md">
+          <Heading
+            size="lg"
+            mb={2}
+            className="border-b pb-2 text-md font-extrabold"
+          >
+            Finalizado
           </Heading>
           {tasks.filter((task) => task.status === "done").length === 0 ? (
             <Text mt={4}>Nenhuma tarefa concluída.</Text>
@@ -104,6 +111,7 @@ const BoardPage = () => {
                   borderRadius="lg"
                   p={3}
                   mt={3}
+                  className="bg-gray-100 hover:bg-gray-200 transition-all"
                 >
                   <Text fontWeight="bold">{task.title}</Text>
                   <Text>{task.description}</Text>
