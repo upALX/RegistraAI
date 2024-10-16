@@ -20,13 +20,8 @@ This is front end side of a quick app to management tasks.
 ## How to use 🫁
 
 **requirements:**
-
-- docker >= 20
-- Node >= 20.18.0
-- React >= 18
-- Vite >= 5.2.0
-- Graphql >= 16.9.0
-- Chakraui >= 2.8.2
+  - docker >= 27.3.1
+  - docker compose >= 1.29.2
 
 **1 - Clone this repo:**
 
@@ -34,7 +29,7 @@ This is front end side of a quick app to management tasks.
 git clone git@github.com:upALX/registraai.git
 ```
 
-**2 - build and run the docker instance**
+**2 - Build and run the docker instance (first time)**
 
 ```
 docker-compose up --build
