@@ -13,6 +13,7 @@ This is front end side of a quick app to management tasks.
 ## Tech stack
 
 ![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react)&nbsp;
+![Node](https://img.shields.io/badge/-Node-05122A?style=flat&logo=node.js)&nbsp;
 ![Vite](https://img.shields.io/badge/-Vite-05122A?style=flat&logo=vite)&nbsp;
 ![Apollo](https://img.shields.io/badge/-Apollo-05122A?style=flat&logo=apollographql)&nbsp;
 ![Chakra](https://img.shields.io/badge/-ChakraUI-05122A?style=flat&logo=chakraui)&nbsp;
